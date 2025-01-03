@@ -1,0 +1,5 @@
+site_name: My Docs
+site_url:
+site_author: Defey
+theme:
+  name: material
