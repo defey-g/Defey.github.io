@@ -7,11 +7,11 @@ repo_name: Defey.github.io
 theme:
   name: material
   font: 
-    text: Yanone Kaffeesatz
+    # text: ZCOOL
     code: Roboto Mono
   palette:
     - scheme: default
-      primary: blue
+      primary: grey
       accent: blue                #链接和其他可交互元件的高亮色
       toggle:
         icon: material/brightness-7 

@@ -40,3 +40,28 @@
     animation: heart 1000ms infinite;
     color: #EE0F0F;
   }
+
+
+/* :root {
+  --md-text-font: "MaShanZheng-Regular"; 
+}
+  @font-face {
+    font-family: "MaShanZheng-Regular";
+    src: "/font/MaShanZheng-Regular.ttf";
+  } */
+
+  :root {
+    --md-text-font: "Yuji";
+  }
+  @font-face {
+    font-family: 'Yuji';
+    src: url('../fonts/YujiSyuku-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+
+/* body {
+    font-family: 'MyFont', sans-serif;
+} */
