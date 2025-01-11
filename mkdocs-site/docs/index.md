@@ -1,6 +1,10 @@
-# Welcome to MkDocs
+# 主页
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+
+点击查看 [^1] Material 官方文档:
+
+[Material Documents :octicons-heart-fill-24:{ .heart } ](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/){ .md-button .md-button--primary }
 
 ## Commands
 
@@ -15,3 +19,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+

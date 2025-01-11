@@ -1,5 +1,91 @@
 site_name: My Docs
 site_url: https://defey-g.github.io/Defey.github.io/
 site_author: Defey
+
+repo_url: https://defey-g.github.io/Defey.github.io/
+repo_name: Defey.github.io
 theme:
   name: material
+  font: 
+    text: Yanone Kaffeesatz
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue                #链接和其他可交互元件的高亮色
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: amber
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant          #启用即时加载，对所有内部链接的点击将被拦截并通过XHR发送，而无需完全重新加载页面
+    - navigation.instant.progress #加载时间超过400ms时，加载进度条显示
+    - navigation.tracking         #地址栏中的URL 自动更新为目录中突出的锚点
+    - navigation.tabs             #左侧方目录菜单移动到上面视口标题下方
+    - navigation.tabs.sticky      #导航选项卡将锁定在标题下方，并且在向下滚动时始终保持可见
+    - navigation.top              #返回顶部的按钮在上划时出现
+    - navigation.expand           #打开tab 时左侧目录全部展开
+    - navigation.footer           # 上一页和下一页
+    - content.code.copy           # 代码复制按钮
+    - content.code.annotate
+    # - content.footnote.tooltips
+    # - navigation.path
+    # - navigation.indexes
+    - search.suggest              #搜索补全
+    - search.highlight            #搜索内容高亮显示
+    - search.share                #搜索分享按钮
+  language: zh
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/library
+
+nav:
+  - Home: index.md
+  - Learning Note: 
+    - Markdown: Markdown/markdown.md
+    - HTML: HTML/html.md
+
+copyright: Copyright &copy; 2023 David # 左下角的版权声明
+
+# plugins:
+#   - typeset
+
+extra:
+  generator: false #删除页脚显示 ‘使用Makdocs 材料制造’
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<2823724573@qq.com>
+  annotate:
+    json: [.s2]
+
+
+markdown_extensions:
+  - attr_list               # 将链接转化为按钮
+  - footnotes               # 行内脚注
+  - admonition              # Enable admonition  提示框
+  - pymdownx.details        # Enable admonition 
+  - pymdownx.superfences    # Enable admonition 
+  - pymdownx.highlight      # Highlight扩展。代码块语法高亮显示.
+  - pymdownx.inlinehilite   # InlineHilite 扩展增加了对内联代码块语法高亮显示的支持 它构建在Highlight扩展之上.
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.caret  #插入角标符号(`^`)  
+  - pymdownx.mark   #双等号(`==`)
+  - pymdownx.tilde  #波浪号(`~`)
+  - pymdownx.tabbed:        #内容选项卡
+      alternate_style: true #内容选项卡 分栏显示
+  - pymdownx.critic: #  评论家
+      mode: accept #应如何解析标记，默认view查看更改，accept是接受更改，reject是拒绝更改
+  - pymdownx.keys   #键盘键和组合
+  - pymdownx.emoji:                                                   #通过使用简单的短代码来使用图标和表情符号 例: :fontawesome-solid-paper-plane:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji    #通过使用简单的短代码来使用图标和表情符号
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg #通过使用简单的短代码来使用图标和表情符号
+
+extra_css:
+  - stylesheets/extra.css
